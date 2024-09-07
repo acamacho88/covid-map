@@ -16,6 +16,6 @@ export const splitDataByDate = (data: DSVRowArray<CovidColumnHeaders>): CovidDat
             dataSplitByDate[currentIndex].push(item);
         }
     })
-
+    
     return dataSplitByDate;
 }

@@ -1,12 +1,12 @@
 import { Suspense } from "react";
 import styles from "./page.module.css";
-import CovidMap from "./ui/covid-map";
+import CovidMapWrapper from "./ui/CovidMapWrapper";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <Suspense fallback={<h2>Loading map...</h2>}>
-        <CovidMap />
+        <CovidMapWrapper />
       </Suspense>
     </main>
   );

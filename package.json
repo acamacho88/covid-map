@@ -9,14 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/material": "^5.16.7",
+    "@mui/x-date-pickers": "^7.13.0",
     "@types/d3-dsv": "^3.0.7",
+    "classcat": "^5.0.5",
     "d3-dsv": "^3.0.1",
     "d3-fetch": "^3.0.1",
     "d3-scale": "^4.0.2",
+    "html2canvas": "^1.4.1",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
-    "react-simple-maps": "^3.0.0"
+    "react-simple-maps": "^3.0.0",
+    "sass": "^1.77.8"
   },
   "devDependencies": {
     "@types/d3-fetch": "^3.0.7",
