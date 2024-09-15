@@ -5,7 +5,9 @@ import CovidMap from "./CovidMap/CovidMap";
 import CovidMapDisplayer from "./CovidMapDisplayer/CovidMapDisplayer";
 
 export default async function CovidMapWrapper() {
-  const dataYears = ["2020"]; //,'2021','2022','2023'];
+  // const dataYears = ["2020", "2021"]; //, "2022", "2023"];
+  // const dataYears = ["2022", "2023"];
+  const dataYears = ["2020"];
   const csvPaths = dataYears.map(
     (year) =>
       `https://raw.githubusercontent.com/nytimes/covid-19-data/master/rolling-averages/us-counties-${year}.csv`
@@ -34,7 +36,14 @@ export default async function CovidMapWrapper() {
   return (
     <>
       {dataMaps && dataMaps.length ? (
-        <CovidMapDisplayer dataMaps={dataMaps} />
+        <>
+          <CovidMapDisplayer dataMaps={dataMaps} />
+          <br />
+          <p>
+            Data compiled from the New York Times COVID-19 tracking effort{" "}
+            {/* <a href="https://github.com/nytimes/covid-19-data">here</a> */}
+          </p>
+        </>
       ) : (
         <></>
       )}

@@ -20,14 +20,20 @@ const msInDay = 1000 * 60 * 60 * 24;
 export default function NewsBox({ date }: NewsBoxProps) {
   const [currentEvents, setCurrentEvents] = useState<NewsEvent[]>([]);
 
-  const addToArray = (newItem: NewsEvent, newsArray: NewsEvent[]) => {
+  const addToArray = (newsItem: NewsEvent, newsArray: NewsEvent[]) => {
     const maxNewsIems = 3;
     if (newsArray.length > maxNewsIems) {
       const indexToRemove = newsArray.findIndex((event) => !event.endDate);
       newsArray.splice(indexToRemove, 1);
     }
 
-    newsArray.push(newItem);
+    const existingNewsItem = newsArray.find(
+      (item) => item.text === newsItem.text
+    );
+
+    if (!existingNewsItem) {
+      newsArray.push(newsItem);
+    }
   };
 
   const cleanCurrentEvents = (events: NewsEvent[]): NewsEvent[] => {
@@ -86,7 +92,7 @@ export default function NewsBox({ date }: NewsBoxProps) {
   return (
     <div className={styles.boxWrapper}>
       {currentEvents.map((event) => {
-        return <p>{getEventText(event)}</p>;
+        return <p key={event.text}>{getEventText(event)}</p>;
       })}
     </div>
   );

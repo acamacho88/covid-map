@@ -14,6 +14,7 @@ export default function Key() {
         {colorScale.map((item, index) => {
           return (
             <div
+              key={item.cases}
               className={cc({
                 [styles.scaleSegment]: true,
                 [styles.rightBorder]: index % 2 === 0,

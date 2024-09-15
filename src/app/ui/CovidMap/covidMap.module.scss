@@ -1,8 +1,7 @@
-.sideBoxWrapper {
+.infoWrapper {
+  align-items: flex-end;
   display: flex;
-  flex-direction: column;
-  gap: 16px;
-  justify-content: left;
+  justify-content: space-between;
   margin-top: 16px;
   width: 100%;
 }

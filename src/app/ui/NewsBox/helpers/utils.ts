@@ -150,13 +150,13 @@ export const newsEvents: NewsEvent[] = [
   {
     startDate: "2020-11-01",
     endDate: "2021-03-01",
-    text: "Approx: Alpha variant active",
+    text: "Alpha variant active",
     category: newsCategories.covid,
   },
   {
     startDate: "2020-12-15",
     endDate: "2020-01-15",
-    text: "Approx: Alpha variant peaks",
+    text: "Alpha variant peaks",
     category: newsCategories.covid,
   },
   {
@@ -222,13 +222,13 @@ export const newsEvents: NewsEvent[] = [
   {
     startDate: "2021-07-01",
     endDate: "2021-11-15",
-    text: "Approx: Delta variant active",
+    text: "Delta variant active",
     category: newsCategories.covid,
   },
   {
     startDate: "2021-09-01",
     endDate: "2021-10-01",
-    text: "Approx: Delta variant peaks",
+    text: "Delta variant peaks",
     category: newsCategories.covid,
   },
   {
@@ -244,13 +244,13 @@ export const newsEvents: NewsEvent[] = [
   {
     startDate: "2022-01-01",
     endDate: "2022-04-01",
-    text: "Approx: Omicron variant active",
+    text: "Omicron variant active",
     category: newsCategories.covid,
   },
   {
     startDate: "2022-02-01",
     endDate: "2022-03-01",
-    text: "Approx: Omicron variant peaks",
+    text: "Omicron variant peaks",
     category: newsCategories.covid,
   },
   {

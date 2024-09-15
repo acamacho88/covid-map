@@ -4,9 +4,9 @@ import { ReactElement } from "react";
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 import { getFill } from "./helpers/utils";
 import NewsBox from "../NewsBox/NewsBox";
+import Key from "../Key/Key";
 
 import styles from "./covidMap.module.scss";
-import Key from "../Key/Key";
 
 const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/counties-10m.json";
 
@@ -20,7 +20,7 @@ export default function CovidMap({ data }: CovidMapProps): ReactElement {
 
   return (
     <>
-      <div className={styles.sideBoxWrapper}>
+      <div className={styles.infoWrapper}>
         <NewsBox date={date} />
         <Key />
       </div>
