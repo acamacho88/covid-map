@@ -13,6 +13,7 @@ export default function CovidMapDisplayer({
 }: CovidMapDisplayerProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // uncomment this to see the progression without screenshots
   // useEffect(() => {
   //   const interval = setInterval(
   //     () =>
@@ -31,6 +32,7 @@ export default function CovidMapDisplayer({
   //   };
   // }, []);
 
+  // uncomment this to save a screenshot for each day
   useEffect(() => {
     const screenshotTimer = setTimeout(() => {
       html2canvas(document.body).then((canvas) => {

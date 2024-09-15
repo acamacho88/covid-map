@@ -20,15 +20,20 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## Resources used
 
+This app was created using the New York Times' publicly available data on the COVID-19 pandemic found at their github page here: https://github.com/nytimes/covid-19-data
+
+Used react-simple-maps to display the data: https://www.react-simple-maps.io/
+
+Used html2canvas to create the screenshots for each date: https://html2canvas.hertzen.com/
+
 The dates for the calendar component were gathered from the following Wikipedia pages and Johns Hopkins article:
+
 https://en.wikipedia.org/wiki/2020
+
 https://en.wikipedia.org/wiki/2021
+
 https://en.wikipedia.org/wiki/2022
+
 https://en.wikipedia.org/wiki/2023
+
 https://coronavirus.jhu.edu/pandemic-data-initiative/data-outlook/comparing-cases-deaths-and-hospitalizations-indicates-omicron-less-deadly
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

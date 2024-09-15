@@ -5,8 +5,9 @@ import CovidMap from "./CovidMap/CovidMap";
 import CovidMapDisplayer from "./CovidMapDisplayer/CovidMapDisplayer";
 
 export default async function CovidMapWrapper() {
-  // const dataYears = ["2020", "2021"]; //, "2022", "2023"];
-  // const dataYears = ["2022", "2023"];
+  // only select two years at most at a time, otherwise the memory will overflow
+  // improvement: investigate usage of papaparse to reduce load on memory https://www.papaparse.com/docs
+  // const dataYears = ["2020", "2021", "2022", "2023"];
   const dataYears = ["2020"];
   const csvPaths = dataYears.map(
     (year) =>
